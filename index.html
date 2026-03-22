@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../calculator/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc-input"> 
+            <p id="user-input">0</p>
+        </div>
+        <div class="buttons">
+            <button type="button" onclick="clearAll('')" class="other-operations">AC</button>
+            <button type="button" onclick="clearLast('')" class="other-operations">x</button>
+            <button type="button" onclick="typingValue('%')" class="other-operations">%</button>
+            <button type="button" onclick="typingValue('/')" class="classic-operations">/</button>
+            <button type="button" onclick="typingValue('7')" class="number">7</button>
+            <button type="button" onclick="typingValue('8')" class="number">8</button>
+            <button type="button" onclick="typingValue('9')" class="number">9</button>
+            <button type="button" onclick="typingValue('*')" class="classic-operations">*</button>
+            <button type="button" onclick="typingValue('4')" class="number">4</button>
+            <button type="button" onclick="typingValue('5')" class="number">5</button>
+            <button type="button" onclick="typingValue('6')" class="number">6</button>
+            <button type="button" onclick="typingValue('-')" class="classic-operations">-</button>
+            <button type="button" onclick="typingValue('1')" class="number">1</button>
+            <button type="button" onclick="typingValue('2')" class="number">2</button>
+            <button type="button" onclick="typingValue('3')" class="number">3</button>
+            <button type="button" onclick="typingValue('+')" class="classic-operations">+</button>
+            <button type="button" class="change-mode">@</button>
+            <button type="button" onclick="typingValue('0')" class="number">0</button>
+            <button type="button" onclick="typingValue('.')" class="other-operations">.</button>
+            <button type="button" onclick="calcValue('')" class="classic-operations">=</button>
+        </div>
+    </div>
+    <section class="counter">
+        <label id="count-label">0</label><br>
+        <div id="btn-container">
+            <button type="button" onclick="increaseNum('')" id="increase" class="button">increase</button>
+            <button type="button" onclick="resetNum('')" id="reset" class="button">reset</button>
+            <button type="button" onclick="decreaseNum('')" id="decrease" class="button">decrease</button>
+        </div>
+    </section>
+    <section class="tic-tac">
+        <div class="tic-container">
+            <div onclick="typeX('x')" id="tic"></div>
+            <div onclick="typeX('x')" id="tic"></div>
+            <div onclick="typeX('x')" id="tic"></div>
+            <div onclick="typeX('x')" id="tic"></div>
+            <div onclick="typeX('x')" id="tic"></div>
+            <div onclick="typeX('x')" id="tic"></div>
+            <div onclick="typeX('x')" id="tic"></div>
+            <div onclick="typeX('x')" id="tic"></div>
+            <div onclick="typeX('x')" id="tic"></div>
+        </div>
+    </section>
+
+    <section class="roller">
+        <div class="roll-conteiner">
+            <h3 class="dice-title">Dice Roller</h3>
+            <label># of dice:</label>
+            <input id="numOfDice" type="number" value="1" min="1">
+            <button id="roll" onclick="rollDice()">Roll Dice</button><br>
+            <p id="dice-result"></p>
+            <div id="dice-img"></div>
+        </div>
+
+    </section>
+    <section class="slider">
+        <div class="slider-conteiner">
+            <img src="../calculator/img/main1.jpg" alt="img">
+            <img src="../calculator/img/main2.jpg" alt="img2">
+            <img src="../calculator/img/main3.jpg" alt="img3">
+            <button onclick="nextSlide()" class="slider-btn" id="nextSlider">+</button>
+            <button onclick="prevSlide()" class="slider-btn" id="prevSlider">-</button>
+
+        </div>
+
+    </section>
+    <section class="typer">
+        <p>Hello, I'm <span id="span"></span></p>
+    </section>
+
+    
+
+    <script src="../calculator/index.js"></script>
+</body>
+</html>

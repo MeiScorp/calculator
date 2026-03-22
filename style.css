@@ -1,0 +1,171 @@
+
+
+.container {
+    background-color: #EEE2DC;
+    max-width: 400px;
+    max-height: 600px;
+    padding: 17px;
+    border-style: hidden;
+    border-radius: 7%;
+}
+.calc-input {
+    background-color: bisque;
+    border-style: hidden;
+    border-radius: 7%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    height: 65px;
+    padding: ;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    padding-top: 16px;
+    
+}
+button {
+    background-color: #EDC7B7;
+    border-style: hidden;
+    border-radius: 50%;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    font-size: 25px;
+}
+.counter {
+    margin-top: 50px;
+}
+
+#count-label {
+    font-size: 50px;
+}
+#btn-container {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: blue;
+    color: azure;
+    border-style: hidden;
+    border-radius: 0%;
+    width: 200px;
+}
+
+
+.tic-tac {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.tic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 400px;
+    height: 380px;
+}
+
+#tic {
+    background-color:bisque;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.roller {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+.dice-title {
+    font-size: 50px;
+}
+.roll-conteiner {
+    font-size: 40px;
+}
+#roll {
+    background-color: blue;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    width: 170px;
+    height: 60px;
+}
+
+#roll:hover {
+    cursor: pointer;
+    background-color: rgb(28, 28, 250);
+}
+
+#roll:active {
+    background-color:  rgb(75, 75, 252);
+}
+
+#numOfDice {
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+}
+#dice-img img {
+    width: 150px;
+}
+
+.slider {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.slider-conteiner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: blue;
+    border-style: solid;
+}
+.slider-conteiner img {
+    width: 100%;
+    display: none;
+}
+img.display-slide {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+.slider-btn {
+    display: block;
+    margin: auto;
+    background-color: green;
+    border-style: hidden;
+    border-radius: 10%;
+    color: azure;
+}
+
+.typer {
+    display: block;
+    padding: 20px;
+    height: 600px;
+    background-color: rgb(3, 3, 3);
+}
+.typer p {
+    font-size: 50px;
+    color: rgb(172, 172, 255);
+    text-align: center;
+}
+#span {
+    position: relative;
+}
+#span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: blue;
+    width: 5px;
+    height: 95%;
+    top: 0;
+    left: 0;
+}
