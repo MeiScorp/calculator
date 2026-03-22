@@ -17,7 +17,7 @@ The project demonstrates working with the DOM, event handling, basic calculation
 ---
 
 ## 🚀 Live Demo
-
+you can run this app here:
 (https://meiscorp.github.io/calculator/)
 
 ---
