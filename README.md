@@ -1,22 +1,22 @@
-🧮 Modern Calculator
-A stylish, minimalist calculator created with HTML, CSS, and JavaScript. The project demonstrates working with the DOM, event handling, basic calculation logic, and a responsive UI in the glassmorphism style.
+# 🧮 Modern Calculator
 
-✨ Features
+A stylish, minimalist calculator created with HTML, CSS, and JavaScript.  
+The project demonstrates working with the DOM, event handling, basic calculation logic, and a responsive UI in the glassmorphism style.
 
-🔢 Classic arithmetic operations
+---
 
-🧼 Clearing all or the last character
+## ✨ Features
 
-💎 Modern glassmorphism-style design
+### 🔢 Classic arithmetic operations
+### 🧼 Clearing all or the last character
+### 💎 Modern glassmorphism-style design
+### 🎨 Press animations and hover effects
+### 📱 Responsive interface
+### 🌗 Prepared for possible dark/light mode
 
-🎨 Press animations and hover effects
+---
 
-📱 Responsive interface
-
-🌗 Prepared for possible dark/light mode
-
-
-🚀 Live Demo
+## 🚀 Live Demo
 
 (https://meiscorp.github.io/calculator/)
 
