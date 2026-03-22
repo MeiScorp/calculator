@@ -1,40 +1,82 @@
 
+body {
+    background: linear-gradient(135deg, #f7d9d9, #dbe2ef);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+}
 
 .container {
-    background-color: #EEE2DC;
-    max-width: 400px;
-    max-height: 600px;
-    padding: 17px;
-    border-style: hidden;
-    border-radius: 7%;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    padding: 25px;
+    width: 380px;
 }
+
 .calc-input {
-    background-color: bisque;
-    border-style: hidden;
-    border-radius: 7%;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 25px;
-    height: 65px;
-    padding: ;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: right;
+    color: #333;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
 }
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    padding-top: 16px;
-    
+    gap: 12px;
+    margin-top: 20px;
 }
+
 button {
-    background-color: #EDC7B7;
-    border-style: hidden;
-    border-radius: 50%;
-    padding: 5px;
-    width: 80px;
-    height: 80px;
-    font-size: 25px;
+    height: 75px;
+    border-radius: 18px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.15s;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+button:hover {
+    background: rgba(255, 255, 255, 0.75);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.number {
+    color: #333;
+}
+
+.classic-operations {
+    background: #ffb6a0;
+    color: #fff;
+}
+
+.classic-operations:hover {
+    background: #ff9d85;
+}
+
+.other-operations {
+    background: #cddafd;
+    color: #2c3e50;
+}
+
+.change-mode {
+    background: #b8e994;
+    color: #2d572c;
+}
+
 
 
 
